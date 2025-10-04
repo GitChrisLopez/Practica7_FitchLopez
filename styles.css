@@ -1,0 +1,209 @@
+:root {
+  --background: #2b2d42;
+  --hot-pink: #f51aa4;
+  --silver: #c2c1c2;
+  --lime: #b5f44a;
+  --mint: #70ee9c;
+  --orchid: #e07be0;
+  --bright-blue: #3454d1;
+  --lilac: #be97c6;
+  --flamingo: #fc6471;
+  --turquoise: #55d6be;
+  --flame: #ec4e20;
+  --yellow: #ffe066;
+  --ultra-violet: #694abf;
+  --showgirl: #e98a15;
+  --evermore: #af9164;
+  --salmon: #ffa5ab;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.grid {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 20vh 20vh 20vh;
+  gap: 2em; /* espacio entre las filas y columnas*/
+}
+
+/*grow-rows*/
+
+.grid-rows {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 20vh 20vh 10vh;
+  justify-content: space-evenly;
+  height: 70vh;
+  align-content: space-evenly;
+}
+
+.first {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.second {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.fourth {
+  grid-column: 2 / 5;
+}
+
+.full-row {
+  grid-area: 3 / 1 / 4 / 5;
+}
+
+/*bento box*/
+
+.bento-box {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 6.5em 4.5em 3.5em 8.5em;
+  gap: 5px;
+}
+
+.side-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.bottom-right {
+  grid-column: 5/6;
+  grid-row: 3/5;
+}
+
+.middle-left {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.less-width {
+  width: 50%;
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
+  justify-self: end;
+}
+
+.sister-less-width {
+  width: 50%;
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
+  justify-self: start;
+}
+
+.less-height {
+  width: 100%;
+  height: 55%;
+  grid-row: 4 / 5;
+  grid-column: 4 / 5;
+  align-self: center;
+}
+
+.bottom-left {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.top-middle {
+  grid-area: 1 / 2 / 3 / 2;
+}
+
+.middle-flamingo {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.middle-turquoise {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.left-pink {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.right-orchid {
+  grid-area: 1 / 5 / 2 / 5;
+}
+
+.middle-mint {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 50%;
+  align-self: end;
+}
+
+.yellow-top {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 50%;
+  align-self: start;
+}
+
+.right-violet {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+/* colors classes */
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.hot-pink {
+  background-color: var(--hot-pink);
+}
+
+.lime {
+  background-color: var(--lime);
+}
+
+.mint {
+  background-color: var(--mint);
+}
+
+.orchid {
+  background-color: var(--orchid);
+}
+
+.bright-blue {
+  background-color: var(--bright-blue);
+}
+
+.lilac {
+  background-color: var(--lilac);
+}
+
+.flamingo {
+  background-color: var(--flamingo);
+}
+
+.turquoise {
+  background-color: var(--turquoise);
+}
+
+.flame {
+  background-color: var(--flame);
+}
+
+.silver {
+  background-color: var(--silver);
+}
+
+.ultra-violet {
+  background-color: var(--ultra-violet);
+}
+
+.showgirl {
+  background-color: var(--showgirl);
+}
+
+.evermore {
+  background-color: var(--evermore);
+}
+
+.salmon {
+  background-color: var(--salmon);
+}
